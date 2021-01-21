@@ -1,0 +1,80 @@
+body {
+    color: $color-text;
+}
+
+a {
+    text-decoration: none;
+}
+
+// header
+.header {
+    // first-view
+    .first-view {
+        @include background($image: url(../img/common/firstview-img.jpg));
+        height: 100vh;
+        &_text {
+            text-align: center;
+            @include ab-base;
+        }
+        &_main-text {
+            @include p-base() {
+                background-color: $color-white;
+                z-index: -1;
+                opacity: 0.3;
+            };
+        }
+        .btn {
+            @include ab-base($top: 80%);
+            a {
+                color: $color-text;
+            }
+        }
+    }
+}
+// main
+.main {
+    // about
+    .concept {
+        &_sub-text {
+            i {
+                color: #ffc107;
+            }
+        }
+    }
+    // service
+    .service {
+        &_item {
+            flex-basis: 45%;
+        }
+    }
+    // portfolio
+    .portfolio {
+        &_list {
+            padding: 0;
+        }
+        &_item {
+            width: 60%;
+        }
+        .btn {
+            a {
+                color: $color-text;
+            }
+        }
+    }
+    // about
+    .about {
+        &_item {
+            flex-basis: 40%;
+            &:first-child {
+                figure {
+                    width: 50%;
+                    margin: 0 auto;
+                    img {
+                        border-radius: 50%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

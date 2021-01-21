@@ -1,0 +1,23 @@
+// header
+.header {
+    // first-view
+    .first-view {
+        .btn {
+            @include ab-base($top: 90%);
+        }
+    }
+}
+.main {
+    // about
+    .about {
+        &_list {
+            flex-direction: column;
+        }
+    }
+    // portfolio
+    .portfolio {
+        .btn {
+            margin: auto;
+        }
+    }
+}
