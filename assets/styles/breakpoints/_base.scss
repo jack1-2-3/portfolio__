@@ -8,6 +8,10 @@ a {
 
 // header
 .header {
+    // navbar
+    .navbar {
+        z-index: 100;
+    }
     // first-view
     .first-view {
         @include background($image: url(../img/common/firstview-img.jpg));
